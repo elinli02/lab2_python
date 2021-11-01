@@ -199,7 +199,7 @@ with tqdm(total=len(data)) as progressbar:
         progressbar.update(1)
 
 output_file = open(args.output, 'w')
-data_file = json.dumps(validate_data, ensure_ascii=False, indent=4)
+data_file = json.dumps(validate_data)
 output_file.write(data_file)
 output_file.close()
 
